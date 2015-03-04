@@ -3,7 +3,7 @@
 Best Sellers es una applicación web que provee diariamente uno de los cuatro artículos más vendidos en Falabella de forma aleatoria.
 
 
-### Requerimientos
+### Requerimientos Generales
 
 * Ruby 2.2.0
 * Rails 4.2.0
