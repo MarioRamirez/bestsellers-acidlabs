@@ -16,7 +16,7 @@ Best Sellers es una applicación web que provee diariamente uno de los cuatro ar
 Primero clona el repositorio en tu carpeta de aplicaciones:
 
 ```
-$ git clone https://github.com/MarioRamirez/bestsellers-acidlabs.git bestsellers-acidlabs
+git clone https://github.com/MarioRamirez/bestsellers-acidlabs.git bestsellers-acidlabs
 ```
 
 En segundo lugar, ingresa a la carpeta `bestsellers-acidlabs`:
@@ -116,7 +116,7 @@ Después ejecuta este comando para abrir el panel donde se programan las tareas:
 heroku addons:open scheduler
 ```
 
-Finalmente haz clic sobre el botón `Add Job...`, escribe `rake bestsellers` al comienzo y luego selecciona 1X, Daily y la hora del día respectivamente. Haz clic en `Save` para terminar.
+Finalmente haz clic sobre el botón `Add Job...`, escribe `rake bestsellers` al comienzo y luego selecciona `1X`, `Daily` y la `hora del día` respectivamente. Haz clic en `Save` para terminar.
 
 
 ### Versión de Demostración
