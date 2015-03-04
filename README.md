@@ -1,4 +1,4 @@
-== BEST SELLERS
+## BEST SELLERS
 
 Best Sellers es una applicación web que provee diariamente uno de los cuatro artículos más vendidos en Falabella de forma aleatoria.
 
