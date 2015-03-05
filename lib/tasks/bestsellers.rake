@@ -11,7 +11,7 @@ task :bestsellers => :environment do
 		p = Product.new
 		p.name = product.at_css(".detalle a").text
 		p.price = product.at_css(".precio1").text.delete('$.').to_i
-		p.url = product.at_css(".detalle a")[:href]
+		p.url = "http://www.falabella.com" + product.at_css(".detalle a")[:href]
 		p.save
 	end
 end
