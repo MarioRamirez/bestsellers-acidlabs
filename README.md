@@ -76,8 +76,3 @@ whenever --update-crontab fetchBestSellers --set environment=development
 Listo, ahora sólo debes levantar el servidor con `rails s` e ingresar por medio de tu navegador a `http://localhost:3000/`.
 
 IMPORTANTE: si en tu terminal aparece el mensaje `You have new mail` ejecuta `crontab -e` y añade la línea `MAILTO=""` en la parte superior del documento, no olvides guardar el archivo al salir.
-
-
-### Versión de Demostración
-
-Puedes ver la aplicación funcionando en `https://bestsellers-acidlabs.herokuapp.com/`
