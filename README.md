@@ -10,6 +10,14 @@ Best Sellers es una applicación web que provee diariamente uno de los cuatro ar
 * Postgres 9.3.5.2
 * RVM 1.26.7
 
+### Instalación en Producción
+
+Haz clic en el botón de abajo para configurar automáticamente una versión de demostración de la apliación corriendo en tu cuenta de Heroku. (No olvides ejecutar `heroku run rake db:migrate` una vez la aplicación haya sido desplegada).
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+
+De forma alternativa, puedes crear manualmente una aplicación en Heroku y luego utilizar Git para subir y desplegar Best Sellers.
+
 
 ### Instalación Local
 
@@ -68,55 +76,6 @@ whenever --update-crontab fetchBestSellers --set environment=development
 Listo, ahora sólo debes levantar el servidor con `rails s` e ingresar por medio de tu navegador a `http://localhost:3000/`.
 
 IMPORTANTE: si en tu terminal aparece el mensaje `You have new mail` ejecuta `crontab -e` y añade la línea `MAILTO=""` en la parte superior del documento, no olvides guardar el archivo al salir.
-
-
-### Instalación en Producción
-
-Para levantar esta aplicación a producción, primero necesitas una cuenta en `Heroku` e instalar `Heroku Toolbelt`, programa que puedes descargar desde `https://toolbelt.heroku.com/`.
-
-Una vez hecho lo anterior, ejecuta el siguiente comando y escribe los datos que se solicitan:
-
-```
-heroku login
-```
-
-Cuando hayas ingresado asegurate de estar situado en la directorio de la aplicación, y posteriormente, ejecuta estos comandos de modo secuencial:
-
-```
-heroku create
-```
-
-```
-git push heroku master
-```
-
-```
-heroku run rake db:migrate
-```
-
-```
-heroku run rake bestsellers
-```
-
-```
-heroku open
-```
-
-Listo, ya tienes la aplicación funcionando a través de internet. Ahora sólo falta configurar `Heroku Scheduler` para recopilar la información diariamente, este addon es gratuito, sin embargo, debes tener una tarjeta de crédito asociada a tu cuenta.
-
-Para instalar el addon `Heroku Scheduler` debes ejecutar lo siguiente:
-
-```
-heroku addons:add scheduler:standard
-```
-
-Después ejecuta este comando para abrir el panel donde se programan las tareas:
-
-```
-heroku addons:open scheduler
-```
-
-Finalmente haz clic sobre el botón `Add Job...`, escribe `rake bestsellers` al comienzo y luego selecciona `1X`, `Daily` y la `hora del día` respectivamente. Haz clic en `Save` para terminar.
 
 
 ### Versión de Demostración
