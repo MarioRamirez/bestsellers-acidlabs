@@ -1,14 +1,10 @@
 {
-	"name": "Best Sellers",
-	"description": "Best Sellers Client es una applicación web que presenta cada diez segundos uno de los cuatro artículos más vendidos en Falabella.",
-	"repository": "https://github.com/MarioRamirez/bestsellersclient-acidlabs",
-	"keywords": [
-		"ruby",
-		"rails",
-		"demo",
-	],
-	"addons": [],
-	"env": {
+  "name": "Best Sellers",
+  "description": "Applicación web que provee uno de los cuatro artículos más vendidos en Falabella.",
+  "repository": "https://github.com/MarioRamirez/bestsellers-acidlabs",
+  "keywords": ["ruby", "rails", "demo"],
+  "addons": [],
+  "env": {
 		"LANG": "en_US.UTF-8",
 		"RAILS_ENV": "production"
 	}
